@@ -1,0 +1,48 @@
+/* CSS */
+* {margin: 0; padding: 0; box-sizing: border-box; user-select: none;}
+
+body 
+{
+	background: gray; 
+}
+h2#game-message
+{
+	font-size: 130px;
+	font-family: chiller;
+	text-align: center;
+	margin-bottom: 20px;
+}
+div#game-board 
+{
+	margin: 20px auto; 
+	overflow: hidden;
+	width: 605px;
+}
+
+div[id^="row-"] {clear: both;}
+div[id^="row-"] div
+{
+	border: 5px solid plum;
+	height: 200px;
+	width: 200px;
+	float: left;
+	text-align: center;
+	font-family: chiller;
+	font-size: 175px;
+}
+
+div#row-1 div {border-top: none;}
+div#row-3 div {border-bottom: none;}
+div[id^="row-"] div:first-child {border-left: none;}
+div[id^="row-"] div:last-child {border-right: none;}
+
+button
+{
+	position: relative;
+	left: 862px;
+	top: 30px;
+	float: clear;
+	text-align: center;
+	width: 100px;
+	height: 50px;
+}
